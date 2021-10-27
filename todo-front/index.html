@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <section class="container">
+            <h1 class="title">To-do List - Tarefas</h1>
+            <img class="imgTodo" src="./to-do-list.png" alt="">
+            <br>
+            <div class="input-wrapper">
+                <input id="myInput" class="js-input__text" type="text" placeholder="Adicione sua tarefa aqui">
+            </div>
+            <div id="btn" class="butons">
+                <button type="submit" class="js-input__btn">Adicionar</button>
+            </div>
+            <main>
+                <ul id="myUL" class="todo-list js-todo-list">
+                    <li id="todo__item-1" class="todo__item">Exemplo - Clique ao lado para excluir
+                    </li>
+                </ul>
+            </main>
+            <footer class="footer text-center">
+                <div class="container">
+                    <p>To-do List - Matheus Hoy - STARTAIDEIA</p>
+                    <p>©</p>
+                </div>
+            </footer>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <!-- <script src="./script.js"></script> -->
+            <script src="./index.js"></script>
+            <script>
+                axios
+                    .get("http://localhost:4000/tarefas")
+                    .then((response) => console.log(response))
+                    .catch((error) => console.log(error));
+            </script>
+        </section>
+    </body>
+
+    </html>

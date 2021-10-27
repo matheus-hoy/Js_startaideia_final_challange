@@ -1,0 +1,23 @@
+{
+  "name": "desafio-final-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "http-server": "^14.0.0",
+    "nodemon": "^2.0.14",
+    "prisma": "^3.3.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.3.0",
+    "cors": "^2.8.5"
+  }
+}
